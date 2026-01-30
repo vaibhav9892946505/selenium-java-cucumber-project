@@ -1,0 +1,9 @@
+<extentreports>
+    <configuration>
+        <theme>standard</theme>
+        <documentTitle>FMS Automation Report</documentTitle>
+        <reportName>Regression Test Report</reportName>
+        <encoding>UTF-8</encoding>
+        <protocol>https</protocol>
+    </configuration>
+</extentreports>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-01-28T11:15:14 IST" name="Default suite" finished-at="2026-01-28T11:15:47 IST" duration-ms="32600">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner@4009e306]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2026-01-28T11:15:14 IST" name="Default test" finished-at="2026-01-28T11:15:47 IST" duration-ms="32600">
+      <class name="com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner@4009e306]" started-at="2026-01-28T11:15:14 IST" name="setUpClass" finished-at="2026-01-28T11:15:15 IST" duration-ms="571" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6851b296]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner@4009e306]" started-at="2026-01-28T11:15:15 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2026-01-28T11:15:47 IST" duration-ms="31908" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Create supplier without BACS or Payee"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Supplier creation with payment variations"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[❌ Supplier SAVE FAILED. Save button was clicked but supplier was NOT persisted. This is an application issue (silent validation failure).]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: ❌ Supplier SAVE FAILED. Save button was clicked but supplier was NOT persisted. This is an application issue (silent validation failure).
+at com.fms.automation.selenium_cucumber_framework.flows.AccountPayable.SupplierFlow.createSupplier(SupplierFlow.java:55)
+at com.fms.automation.selenium_cucumber_framework.stepdefinitions.AccountPayable.SupplierSteps.user_creates_supplier_with_payment_option(SupplierSteps.java:40)
+at ✽.user creates supplier with payment option "NONE"(file:///C:/Users/Vaibh1503544/eclipse-workspace/selenium-cucumber-framework/src/test/resources/features/AccountPayable/Supplier.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner@4009e306]" started-at="2026-01-28T11:15:47 IST" name="tearDownClass" finished-at="2026-01-28T11:15:47 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.fms.automation.selenium_cucumber_framework.runners.SupplierTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
